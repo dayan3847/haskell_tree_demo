@@ -6,9 +6,13 @@
 
     ghci --version
 
-### Run 
+### Run
 
     ghci
+
+### Load
+
+    :load ./src/Tree
 
 ### Insert Node
 
@@ -39,3 +43,5 @@
 #### Result Tree
 
 ![img_1.png](./doc/tree_example.png)
+
+### Insert Node

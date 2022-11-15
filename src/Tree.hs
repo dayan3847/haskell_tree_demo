@@ -59,23 +59,25 @@ postorder :: (Ord a) => Tree a -> [a]
 postorder Empty = []
 postorder (Node root left right) = postorder left ++ postorder right ++ [root]
 
+--Tests
+
 test_print_tree :: IO ()
-test_print_tree = putStrLn "Test Print Tree" >> print (myTree)
+test_print_tree = putStrLn "Test Print Tree" >> print (my_tree)
 
 test_print_count_nodes :: IO ()
-test_print_count_nodes = putStrLn "Test Print Count Nodes" >> print (count_nodes myTree)
+test_print_count_nodes = putStrLn "Test Print Count Nodes" >> print (count_nodes my_tree)
 
 test_print_count_leaves :: IO ()
-test_print_count_leaves = putStrLn "Test Print Count Leaves" >> print (count_leaves myTree)
+test_print_count_leaves = putStrLn "Test Print Count Leaves" >> print (count_leaves my_tree)
 
 test_print_tree_height :: IO ()
-test_print_tree_height = putStrLn "Test Print Tree Height" >> print (tree_height myTree)
+test_print_tree_height = putStrLn "Test Print Tree Height" >> print (tree_height my_tree)
 
 test_print_preorder :: IO ()
-test_print_preorder = putStrLn "Test Print Preorder" >> print (preorder myTree)
+test_print_preorder = putStrLn "Test Print Preorder" >> print (preorder my_tree)
 
 test_print_inorder :: IO ()
-test_print_inorder = putStrLn "Test Print Inorder" >> print (inorder myTree)
+test_print_inorder = putStrLn "Test Print Inorder" >> print (inorder my_tree)
 
 test_print_postorder :: IO ()
-test_print_postorder = putStrLn "Test Print Postorder" >> print (postorder myTree)
+test_print_postorder = putStrLn "Test Print Postorder" >> print (postorder my_tree)
