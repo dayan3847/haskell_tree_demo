@@ -44,4 +44,30 @@
 
 ![img_1.png](./doc/tree_example.png)
 
-### Insert Node
+### Print Tree
+
+    test_print_tree
+
+### Print Count Nodes
+
+    test_print_count_nodes
+
+### Print Count Leaves
+    
+    test_print_count_leaves
+
+### Print tree height
+    
+    test_print_tree_height
+
+### Print preorder
+    
+    test_print_preorder
+
+### Print inorder
+    
+    test_print_inorder
+
+### Print postorder
+    
+    test_print_postorder
