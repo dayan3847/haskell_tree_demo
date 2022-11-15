@@ -58,3 +58,24 @@ inorder (Node root left right) = inorder left ++ [root] ++ inorder right
 postorder :: (Ord a) => Tree a -> [a]
 postorder Empty = []
 postorder (Node root left right) = postorder left ++ postorder right ++ [root]
+
+test_print_tree :: IO ()
+test_print_tree = putStrLn "Test Print Tree" >> print (myTree)
+
+test_print_count_nodes :: IO ()
+test_print_count_nodes = putStrLn "Test Print Count Nodes" >> print (count_nodes myTree)
+
+test_print_count_leaves :: IO ()
+test_print_count_leaves = putStrLn "Test Print Count Leaves" >> print (count_leaves myTree)
+
+test_print_tree_height :: IO ()
+test_print_tree_height = putStrLn "Test Print Tree Height" >> print (tree_height myTree)
+
+test_print_preorder :: IO ()
+test_print_preorder = putStrLn "Test Print Preorder" >> print (preorder myTree)
+
+test_print_inorder :: IO ()
+test_print_inorder = putStrLn "Test Print Inorder" >> print (inorder myTree)
+
+test_print_postorder :: IO ()
+test_print_postorder = putStrLn "Test Print Postorder" >> print (postorder myTree)
