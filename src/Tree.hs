@@ -12,3 +12,12 @@ insert_node node Empty = Node node Empty Empty
 insert_node node (Node root left right)
  | node <= root = Node root (insert_node node left) right
  | node > root = Node root left (insert_node node right)
+
+--Returns True or False if the node is in the tree
+--search_node (Value to search) (Tree)
+search_node :: (Ord a) => a -> Tree a -> Bool
+search_node searched Empty = False
+search_node searched (Node root left right)
+ | searched == root = True
+ | searched < root = search_node searched left
+ | otherwise = search_node searched right
